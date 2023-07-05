@@ -20,3 +20,5 @@ D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.pdb
 D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.Frm_Login.resources
 D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmUsuarios.resources
 D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmGestaoDeUsuarios.resources
+D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmHorarios.resources
+D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmProfessores.resources

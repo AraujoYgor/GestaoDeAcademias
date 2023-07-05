@@ -12,5 +12,8 @@ namespace GestaoDeAcademias
         public static Boolean logado = false;
         public static int nivel = 0;  //1=BÁSICO - 2= GERENTE - 3=MANUTENÇÃO
         public static DateTime data = DateTime.Today;
+        public static string caminho = System.Environment.CurrentDirectory;
+        public static string nomeBanco = "BaseGestaoDeAcademias.db";
+        public static string caminhoBanco = caminho+@"\Banco\";
     }
 }

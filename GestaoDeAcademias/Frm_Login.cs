@@ -33,7 +33,7 @@ namespace GestaoDeAcademias
             }
 
             string sql = "SELECT * FROM tb_Usuarios WHERE T_Username='" + username+ "' AND T_SenhaUsuario ='"+senha+"'";
-            dt = Banco.consulta(sql);
+            dt = Banco.dql(sql);
             if (dt.Rows.Count == 1)
             {
                 form1.lbl_Acesso.Text = dt.Rows[0].ItemArray[4].ToString();

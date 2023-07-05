@@ -40,11 +40,13 @@ namespace GestaoDeAcademias
             this.cADASTROSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.haráriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mANUTENÇÃOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bancoDeDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLedLogado)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -125,9 +127,12 @@ namespace GestaoDeAcademias
             // 
             // cADASTROSToolStripMenuItem
             // 
+            this.cADASTROSToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.cADASTROSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alunosToolStripMenuItem,
-            this.usuáriosToolStripMenuItem});
+            this.usuáriosToolStripMenuItem,
+            this.haráriosToolStripMenuItem,
+            this.professoresToolStripMenuItem});
             this.cADASTROSToolStripMenuItem.Name = "cADASTROSToolStripMenuItem";
             this.cADASTROSToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.cADASTROSToolStripMenuItem.Text = "CADASTROS";
@@ -151,6 +156,14 @@ namespace GestaoDeAcademias
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
+            // haráriosToolStripMenuItem
+            // 
+            this.haráriosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.haráriosToolStripMenuItem.Name = "haráriosToolStripMenuItem";
+            this.haráriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.haráriosToolStripMenuItem.Text = "Harários";
+            this.haráriosToolStripMenuItem.Click += new System.EventHandler(this.haráriosToolStripMenuItem_Click);
+            // 
             // mANUTENÇÃOToolStripMenuItem
             // 
             this.mANUTENÇÃOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -161,8 +174,9 @@ namespace GestaoDeAcademias
             // 
             // bancoDeDadosToolStripMenuItem
             // 
+            this.bancoDeDadosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.bancoDeDadosToolStripMenuItem.Name = "bancoDeDadosToolStripMenuItem";
-            this.bancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.bancoDeDadosToolStripMenuItem.Text = "Banco de Dados";
             this.bancoDeDadosToolStripMenuItem.Click += new System.EventHandler(this.bancoDeDadosToolStripMenuItem_Click);
             // 
@@ -177,6 +191,7 @@ namespace GestaoDeAcademias
             // 
             // logonToolStripMenuItem
             // 
+            this.logonToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.logonToolStripMenuItem.Name = "logonToolStripMenuItem";
             this.logonToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.logonToolStripMenuItem.Text = "Logon";
@@ -184,10 +199,19 @@ namespace GestaoDeAcademias
             // 
             // logoffToolStripMenuItem
             // 
+            this.logoffToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.logoffToolStripMenuItem.Name = "logoffToolStripMenuItem";
             this.logoffToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.logoffToolStripMenuItem.Text = "Logoff";
             this.logoffToolStripMenuItem.Click += new System.EventHandler(this.logoffToolStripMenuItem_Click);
+            // 
+            // professoresToolStripMenuItem
+            // 
+            this.professoresToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
+            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.professoresToolStripMenuItem.Text = "Professores";
+            this.professoresToolStripMenuItem.Click += new System.EventHandler(this.professoresToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -230,6 +254,8 @@ namespace GestaoDeAcademias
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mANUTENÇÃOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bancoDeDadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem haráriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem professoresToolStripMenuItem;
     }
 }
 
