@@ -29,20 +29,13 @@ namespace GestaoDeAcademias
         /// </summary>
         private void InitializeComponent()
         {
-            this.tb_Usuario = new System.Windows.Forms.TextBox();
             this.tb_Senha = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Logar = new System.Windows.Forms.Button();
             this.btn_Limpar = new System.Windows.Forms.Button();
+            this.cbUser = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // tb_Usuario
-            // 
-            this.tb_Usuario.Location = new System.Drawing.Point(15, 56);
-            this.tb_Usuario.Name = "tb_Usuario";
-            this.tb_Usuario.Size = new System.Drawing.Size(149, 20);
-            this.tb_Usuario.TabIndex = 0;
             // 
             // tb_Senha
             // 
@@ -93,36 +86,44 @@ namespace GestaoDeAcademias
             this.btn_Limpar.UseVisualStyleBackColor = true;
             this.btn_Limpar.Click += new System.EventHandler(this.btn_Limpar_Click);
             // 
+            // cbUser
+            // 
+            this.cbUser.FormattingEnabled = true;
+            this.cbUser.Location = new System.Drawing.Point(15, 52);
+            this.cbUser.Name = "cbUser";
+            this.cbUser.Size = new System.Drawing.Size(149, 21);
+            this.cbUser.TabIndex = 6;
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(180, 253);
+            this.Controls.Add(this.cbUser);
             this.Controls.Add(this.btn_Limpar);
             this.Controls.Add(this.btn_Logar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_Senha);
-            this.Controls.Add(this.tb_Usuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Frm_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tb_Usuario;
         private System.Windows.Forms.TextBox tb_Senha;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_Logar;
         private System.Windows.Forms.Button btn_Limpar;
+        private System.Windows.Forms.ComboBox cbUser;
     }
 }

@@ -22,3 +22,4 @@ D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmU
 D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmGestaoDeUsuarios.resources
 D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmHorarios.resources
 D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmProfessores.resources
+D:\Projetos\GestaoDeAcademias\GestaoDeAcademias\obj\Debug\GestaoDeAcademias.FrmTurmas.resources

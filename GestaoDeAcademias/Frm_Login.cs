@@ -22,13 +22,13 @@ namespace GestaoDeAcademias
 
         private void btn_Logar_Click(object sender, EventArgs e)
         {
-            string username = tb_Usuario.Text;
+            string username = cbUser.Text;
             string senha = tb_Senha.Text;
 
             if(username == "" || senha == "")
             {
                 MessageBox.Show("Usuario e/ou senha invalidos");
-                tb_Usuario.Focus();
+                cbUser.Focus();
                 return;
             }
 
@@ -52,6 +52,22 @@ namespace GestaoDeAcademias
         private void btn_Limpar_Click(object sender, EventArgs e)
         {
                 this.Close();
+        }
+
+        private void Frm_Login_Load(object sender, EventArgs e)
+        {
+            //Preencher combobox Usuarios
+            string vqueryUsuarios = @"
+                    SELECT
+                        T_Username
+                    FROM
+                        tb_Usuarios
+                    ORDER BY
+                        T_Username
+            ";
+            cbUser.Items.Clear();
+            cbUser.DataSource = Banco.dql(vqueryUsuarios);
+            cbUser.DisplayMember = "T_Username";
         }
     }
 }

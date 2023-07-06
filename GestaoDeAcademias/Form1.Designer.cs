@@ -41,12 +41,13 @@ namespace GestaoDeAcademias
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.haráriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mANUTENÇÃOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bancoDeDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tURMASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLedLogado)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -117,6 +118,7 @@ namespace GestaoDeAcademias
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cADASTROSToolStripMenuItem,
+            this.tURMASToolStripMenuItem,
             this.mANUTENÇÃOToolStripMenuItem,
             this.lOGINToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -164,6 +166,14 @@ namespace GestaoDeAcademias
             this.haráriosToolStripMenuItem.Text = "Harários";
             this.haráriosToolStripMenuItem.Click += new System.EventHandler(this.haráriosToolStripMenuItem_Click);
             // 
+            // professoresToolStripMenuItem
+            // 
+            this.professoresToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
+            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.professoresToolStripMenuItem.Text = "Professores";
+            this.professoresToolStripMenuItem.Click += new System.EventHandler(this.professoresToolStripMenuItem_Click);
+            // 
             // mANUTENÇÃOToolStripMenuItem
             // 
             this.mANUTENÇÃOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -205,13 +215,12 @@ namespace GestaoDeAcademias
             this.logoffToolStripMenuItem.Text = "Logoff";
             this.logoffToolStripMenuItem.Click += new System.EventHandler(this.logoffToolStripMenuItem_Click);
             // 
-            // professoresToolStripMenuItem
+            // tURMASToolStripMenuItem
             // 
-            this.professoresToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
-            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.professoresToolStripMenuItem.Text = "Professores";
-            this.professoresToolStripMenuItem.Click += new System.EventHandler(this.professoresToolStripMenuItem_Click);
+            this.tURMASToolStripMenuItem.Name = "tURMASToolStripMenuItem";
+            this.tURMASToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.tURMASToolStripMenuItem.Text = "TURMAS";
+            this.tURMASToolStripMenuItem.Click += new System.EventHandler(this.tURMASToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -256,6 +265,7 @@ namespace GestaoDeAcademias
         private System.Windows.Forms.ToolStripMenuItem bancoDeDadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem haráriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem professoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tURMASToolStripMenuItem;
     }
 }
 

@@ -82,5 +82,11 @@ namespace GestaoDeAcademias
             FrmProfessores frmProfessores = new FrmProfessores();
             abriFrom(2, frmProfessores);
         }
+
+        private void tURMASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTurmas frmTurmas = new FrmTurmas();
+            abriFrom(2, frmTurmas);
+        }
     }
 }
