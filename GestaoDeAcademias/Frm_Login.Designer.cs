@@ -35,6 +35,8 @@ namespace GestaoDeAcademias
             this.btn_Logar = new System.Windows.Forms.Button();
             this.btn_Limpar = new System.Windows.Forms.Button();
             this.cbUser = new System.Windows.Forms.ComboBox();
+            this.pbConfig = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbConfig)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_Senha
@@ -48,8 +50,8 @@ namespace GestaoDeAcademias
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(12, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
@@ -59,7 +61,7 @@ namespace GestaoDeAcademias
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(12, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
@@ -94,18 +96,31 @@ namespace GestaoDeAcademias
             this.cbUser.Size = new System.Drawing.Size(149, 21);
             this.cbUser.TabIndex = 6;
             // 
+            // pbConfig
+            // 
+            this.pbConfig.Image = global::GestaoDeAcademias.Properties.Resources.configurações;
+            this.pbConfig.Location = new System.Drawing.Point(142, 218);
+            this.pbConfig.Name = "pbConfig";
+            this.pbConfig.Size = new System.Drawing.Size(35, 32);
+            this.pbConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbConfig.TabIndex = 7;
+            this.pbConfig.TabStop = false;
+            this.pbConfig.Click += new System.EventHandler(this.pbConfig_Click);
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(180, 253);
+            this.Controls.Add(this.pbConfig);
             this.Controls.Add(this.cbUser);
             this.Controls.Add(this.btn_Limpar);
             this.Controls.Add(this.btn_Logar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_Senha);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -113,6 +128,7 @@ namespace GestaoDeAcademias
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Frm_Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbConfig)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +141,6 @@ namespace GestaoDeAcademias
         private System.Windows.Forms.Button btn_Logar;
         private System.Windows.Forms.Button btn_Limpar;
         private System.Windows.Forms.ComboBox cbUser;
+        private System.Windows.Forms.PictureBox pbConfig;
     }
 }

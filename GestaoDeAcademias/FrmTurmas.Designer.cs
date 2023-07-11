@@ -29,7 +29,7 @@ namespace GestaoDeAcademias
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTurmas));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@ namespace GestaoDeAcademias
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tb_Vagas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTurmas)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudAlunos)).BeginInit();
@@ -96,21 +97,21 @@ namespace GestaoDeAcademias
             this.dgvTurmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTurmas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvTurmas.EnableHeadersVisualStyles = false;
-            this.dgvTurmas.Location = new System.Drawing.Point(10, 179);
+            this.dgvTurmas.Location = new System.Drawing.Point(10, 203);
             this.dgvTurmas.MultiSelect = false;
             this.dgvTurmas.Name = "dgvTurmas";
             this.dgvTurmas.ReadOnly = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTurmas.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTurmas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTurmas.RowHeadersVisible = false;
             this.dgvTurmas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTurmas.Size = new System.Drawing.Size(403, 240);
+            this.dgvTurmas.Size = new System.Drawing.Size(403, 216);
             this.dgvTurmas.TabIndex = 6;
             this.dgvTurmas.TabStop = false;
             this.dgvTurmas.DoubleClick += new System.EventHandler(this.dgvTurmas_DoubleClick);
@@ -124,6 +125,7 @@ namespace GestaoDeAcademias
             this.btnNovo.TabIndex = 7;
             this.btnNovo.Text = "NOVO";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // panel1
             // 
@@ -147,6 +149,7 @@ namespace GestaoDeAcademias
             this.btnEditar.TabIndex = 9;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnSalva
             // 
@@ -157,6 +160,7 @@ namespace GestaoDeAcademias
             this.btnSalva.TabIndex = 8;
             this.btnSalva.Text = "SALVAR";
             this.btnSalva.UseVisualStyleBackColor = true;
+            this.btnSalva.Click += new System.EventHandler(this.btnSalva_Click);
             // 
             // btnExcluir
             // 
@@ -167,6 +171,7 @@ namespace GestaoDeAcademias
             this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // cbProfeessor
             // 
@@ -199,6 +204,7 @@ namespace GestaoDeAcademias
             this.nudAlunos.Name = "nudAlunos";
             this.nudAlunos.Size = new System.Drawing.Size(197, 20);
             this.nudAlunos.TabIndex = 4;
+            this.nudAlunos.ValueChanged += new System.EventHandler(this.nudAlunos_ValueChanged);
             // 
             // label4
             // 
@@ -230,6 +236,7 @@ namespace GestaoDeAcademias
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(23, 22);
             this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // tbId
             // 
@@ -273,12 +280,25 @@ namespace GestaoDeAcademias
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
+            // tb_Vagas
+            // 
+            this.tb_Vagas.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tb_Vagas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_Vagas.ForeColor = System.Drawing.Color.Red;
+            this.tb_Vagas.Location = new System.Drawing.Point(12, 184);
+            this.tb_Vagas.Name = "tb_Vagas";
+            this.tb_Vagas.ReadOnly = true;
+            this.tb_Vagas.Size = new System.Drawing.Size(397, 13);
+            this.tb_Vagas.TabIndex = 45;
+            this.tb_Vagas.TabStop = false;
+            // 
             // FrmTurmas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(421, 475);
+            this.Controls.Add(this.tb_Vagas);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbTurma);
@@ -334,5 +354,6 @@ namespace GestaoDeAcademias
         private System.Windows.Forms.TextBox tbTurma;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tb_Vagas;
     }
 }

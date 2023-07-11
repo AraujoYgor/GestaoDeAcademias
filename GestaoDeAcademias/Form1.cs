@@ -60,9 +60,15 @@ namespace GestaoDeAcademias
 
         }
 
+        private void gESTÃODEALUNOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGestaoDeAlunos frmGestaoDeAlunos = new FrmGestaoDeAlunos();
+            abriFrom(2, frmGestaoDeAlunos);
+        }
         private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            FrmAlunos frmAlunos = new FrmAlunos();
+            abriFrom(2, frmAlunos);
         }
 
         private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)

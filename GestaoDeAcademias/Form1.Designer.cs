@@ -35,7 +35,6 @@ namespace GestaoDeAcademias
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_Acesso = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbLedLogado = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cADASTROSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,9 +47,11 @@ namespace GestaoDeAcademias
             this.logonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tURMASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gESTÃODEALUNOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pbLedLogado = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLedLogado)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLedLogado)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -103,21 +104,12 @@ namespace GestaoDeAcademias
             this.label1.TabIndex = 1;
             this.label1.Text = "Acesso:";
             // 
-            // pbLedLogado
-            // 
-            this.pbLedLogado.Image = ((System.Drawing.Image)(resources.GetObject("pbLedLogado.Image")));
-            this.pbLedLogado.Location = new System.Drawing.Point(777, 3);
-            this.pbLedLogado.Name = "pbLedLogado";
-            this.pbLedLogado.Size = new System.Drawing.Size(20, 20);
-            this.pbLedLogado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLedLogado.TabIndex = 0;
-            this.pbLedLogado.TabStop = false;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cADASTROSToolStripMenuItem,
+            this.gESTÃODEALUNOSToolStripMenuItem,
             this.tURMASToolStripMenuItem,
             this.mANUTENÇÃOToolStripMenuItem,
             this.lOGINToolStripMenuItem});
@@ -144,7 +136,7 @@ namespace GestaoDeAcademias
             this.alunosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
             this.alunosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.alunosToolStripMenuItem.Tag = "Cadastre seus Alunos";
             this.alunosToolStripMenuItem.Text = "Alunos";
             this.alunosToolStripMenuItem.Click += new System.EventHandler(this.alunosToolStripMenuItem_Click);
@@ -154,7 +146,7 @@ namespace GestaoDeAcademias
             this.usuáriosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
             this.usuáriosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U)));
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
@@ -162,7 +154,7 @@ namespace GestaoDeAcademias
             // 
             this.haráriosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.haráriosToolStripMenuItem.Name = "haráriosToolStripMenuItem";
-            this.haráriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.haráriosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.haráriosToolStripMenuItem.Text = "Harários";
             this.haráriosToolStripMenuItem.Click += new System.EventHandler(this.haráriosToolStripMenuItem_Click);
             // 
@@ -170,7 +162,7 @@ namespace GestaoDeAcademias
             // 
             this.professoresToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
-            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.professoresToolStripMenuItem.Text = "Professores";
             this.professoresToolStripMenuItem.Click += new System.EventHandler(this.professoresToolStripMenuItem_Click);
             // 
@@ -222,6 +214,23 @@ namespace GestaoDeAcademias
             this.tURMASToolStripMenuItem.Text = "TURMAS";
             this.tURMASToolStripMenuItem.Click += new System.EventHandler(this.tURMASToolStripMenuItem_Click);
             // 
+            // gESTÃODEALUNOSToolStripMenuItem
+            // 
+            this.gESTÃODEALUNOSToolStripMenuItem.Name = "gESTÃODEALUNOSToolStripMenuItem";
+            this.gESTÃODEALUNOSToolStripMenuItem.Size = new System.Drawing.Size(127, 20);
+            this.gESTÃODEALUNOSToolStripMenuItem.Text = "GESTÃO DE ALUNOS";
+            this.gESTÃODEALUNOSToolStripMenuItem.Click += new System.EventHandler(this.gESTÃODEALUNOSToolStripMenuItem_Click);
+            // 
+            // pbLedLogado
+            // 
+            this.pbLedLogado.Image = ((System.Drawing.Image)(resources.GetObject("pbLedLogado.Image")));
+            this.pbLedLogado.Location = new System.Drawing.Point(777, 3);
+            this.pbLedLogado.Name = "pbLedLogado";
+            this.pbLedLogado.Size = new System.Drawing.Size(20, 20);
+            this.pbLedLogado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLedLogado.TabIndex = 0;
+            this.pbLedLogado.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,9 +247,9 @@ namespace GestaoDeAcademias
             this.Text = "CFB Academia- v1.0";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLedLogado)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLedLogado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,6 +275,7 @@ namespace GestaoDeAcademias
         private System.Windows.Forms.ToolStripMenuItem haráriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem professoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tURMASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gESTÃODEALUNOSToolStripMenuItem;
     }
 }
 

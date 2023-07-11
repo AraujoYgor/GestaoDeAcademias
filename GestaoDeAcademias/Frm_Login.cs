@@ -69,5 +69,10 @@ namespace GestaoDeAcademias
             cbUser.DataSource = Banco.dql(vqueryUsuarios);
             cbUser.DisplayMember = "T_Username";
         }
+
+        private void pbConfig_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
